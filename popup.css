@@ -1,0 +1,49 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.popup{
+    top: 100px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    padding: 3px ;
+    border-radius: 5px;
+    margin: 5px auto;
+    z-index: 2000;
+    display: none;
+    border: 1px solid #ccc;
+}
+@media only screen and (max-width: 450px) {
+    .popup {
+        top: 0%;
+        width: 90vw;
+        height: 90vh;
+        padding: 2px 30px;
+        margin: 10px auto;
+    }
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid darkred;
+
+}
+.head img{
+   cursor: pointer;
+   width: 20px;
+   height: 20px;
+   
+}
+.content{
+    text-align: center;
+}
